@@ -1,5 +1,5 @@
 {
-  "name": "react-native-recyclerview-list",
+  "name": "react-native-recyclerview-fixed",
   "version": "1.0.0",
   "description": "A RecyclerView implementation for React Native",
   "main": "index.js",
