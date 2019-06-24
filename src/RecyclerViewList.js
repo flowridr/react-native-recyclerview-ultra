@@ -288,7 +288,7 @@ class RecyclerView extends React.PureComponent {
     if (animated) {
       UIManager.dispatchViewManagerCommand(
           ReactNative.findNodeHandle(this),
-          UIManager.AndroidRecyclerViewBackedScrollView.Commands.scrollToIndex,
+          UIManager.getViewManagerConfig('AndroidRecyclerViewBackedScrollView').Commands.scrollToIndex,
           [animated, index, velocity, viewPosition, viewOffset],
         );
     } else {
@@ -298,7 +298,7 @@ class RecyclerView extends React.PureComponent {
       }, () => {
         UIManager.dispatchViewManagerCommand(
             ReactNative.findNodeHandle(this),
-            UIManager.AndroidRecyclerViewBackedScrollView.Commands.scrollToIndex,
+            UIManager.getViewManagerConfig('AndroidRecyclerViewBackedScrollView').Commands.scrollToIndex,
             [animated, index, velocity, viewPosition, viewOffset],
           );
       });
@@ -335,7 +335,7 @@ class RecyclerView extends React.PureComponent {
   _notifyItemMoved(currentPosition, nextPosition) {
     UIManager.dispatchViewManagerCommand(
       ReactNative.findNodeHandle(this),
-      UIManager.AndroidRecyclerViewBackedScrollView.Commands.notifyItemMoved,
+      UIManager.getViewManagerConfig('AndroidRecyclerViewBackedScrollView').Commands.notifyItemMoved,
       [currentPosition, nextPosition],
     );
     this.forceUpdate();
@@ -344,7 +344,7 @@ class RecyclerView extends React.PureComponent {
   _notifyItemRangeInserted(position, count) {
     UIManager.dispatchViewManagerCommand(
         ReactNative.findNodeHandle(this),
-        UIManager.AndroidRecyclerViewBackedScrollView.Commands.notifyItemRangeInserted,
+        UIManager.getViewManagerConfig('AndroidRecyclerViewBackedScrollView').Commands.notifyItemRangeInserted,
         [position, count],
       );
 
@@ -371,7 +371,7 @@ class RecyclerView extends React.PureComponent {
   _notifyItemRangeRemoved(position, count) {
     UIManager.dispatchViewManagerCommand(
         ReactNative.findNodeHandle(this),
-        UIManager.AndroidRecyclerViewBackedScrollView.Commands.notifyItemRangeRemoved,
+        UIManager.getViewManagerConfig('AndroidRecyclerViewBackedScrollView').Commands.notifyItemRangeRemoved,
         [position, count],
       );
     this.forceUpdate();
@@ -380,7 +380,7 @@ class RecyclerView extends React.PureComponent {
   _notifyDataSetChanged(itemCount) {
     UIManager.dispatchViewManagerCommand(
         ReactNative.findNodeHandle(this),
-        UIManager.AndroidRecyclerViewBackedScrollView.Commands.notifyDataSetChanged,
+        UIManager.getViewManagerConfig('AndroidRecyclerViewBackedScrollView').Commands.notifyDataSetChanged,
         [itemCount],
       );
     this.setState({
