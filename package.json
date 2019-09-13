@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/godness84/react-native-recyclerview-list.git"
+    "url": "https://github.com/flowridr/react-native-recyclerview-ultra.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
