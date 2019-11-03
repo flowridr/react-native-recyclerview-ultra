@@ -1,5 +1,5 @@
 
-# react-native-recyclerview-list
+# react-native-recyclerview-ultra
 
 A RecyclerView implementation for ReactNative, that overcomes some limitations of `FlatList`, `VirtualizedList` and `ListView`.
 
@@ -27,11 +27,11 @@ A RecyclerView implementation for ReactNative, that overcomes some limitations o
 
 ## Getting started
 
-`$ npm install react-native-recyclerview-list --save`
+`$ npm install react-native-recyclerview-ultra --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-recyclerview-list`
+`$ react-native link react-native-recyclerview-ultra`
 
 ### Manual installation
 
@@ -43,18 +43,18 @@ A RecyclerView implementation for ReactNative, that overcomes some limitations o
   - Add `new RNRecyclerviewListPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-recyclerview-list'
-  	project(':react-native-recyclerview-list').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-recyclerview-list/android')
+  	include ':react-native-recyclerview-ultra'
+  	project(':react-native-recyclerview-ultra').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-recyclerview-ultra/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-recyclerview-list')
+      compile project(':react-native-recyclerview-ultra')
   	```
 
 
 ## Usage
 ```javascript
-import RecyclerviewList, { DataSource } from 'react-native-recyclerview-list';
+import RecyclerviewList, { DataSource } from 'react-native-recyclerview-ultra';
 
 // Take an array as data
 var rawdata = [
