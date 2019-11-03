@@ -8,7 +8,8 @@ A RecyclerView implementation for ReactNative, that overcomes some limitations o
 |-----------------------|---------------|
 | **0.1.x**          | **0.45, 0.46**   |
 | **0.2.0 - 0.2.2**  | **0.47, 0.48**   |
-| **0.2.3 - latest** | **>= 0.49**   |
+| **0.2.3 - 0.3.4** | **0.49 - 0.59**   |
+| **3.0.0 - latest** | **>= 0.60**   |
 
 ## Features
 
